@@ -11,6 +11,16 @@
 // TODO: Print the age variable
 // TODO: Change the age to 26 and print it again
 
+fn exercise1() {
+    let mut age = 25;
+    println!("Ager {}", age);
+
+    age = 26;
+    println!("New Age {}", age);
+}
+
+
+
 // Exercise 2: Type Inference
 // TODO: Declare variables with different types and let Rust infer their types
 // - An integer (i32)
