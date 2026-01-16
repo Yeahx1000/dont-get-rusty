@@ -4,16 +4,26 @@ A structured Rust learning project designed to help you progress from beginner t
 
 Slapped this together for personal use, so it's not perfect, but it could be helpful, so sharing. Decent for practicing some Rust concepts, but not a replacement for a real project and real world experience.
 
+- [Helpful Links and Tools](#helpful-links-and-tools)
 - [Project Structure](#project-structure)
   - [Beginner Level](#beginner-level)
   - [Intermediate Level](#intermediate-level)
   - [Advanced Level](#advanced-level)
+  - [Bonus](#bonus)
 - [How to Use This Project](#how-to-use-this-project)
 - [Answer Guides](#answer-guides)
 - [Getting Started](#getting-started)
 - [Tips for Learning](#tips-for-learning)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Helpful Links and Tools
+
+These are some helpful links and tools I've found useful.
+
+- ["The Book"](https://doc.rust-lang.org/book/)
+- [Rust Lang Cheatsheet](https://cheats.rs/)
+- [Rust Developer Roadmap](https://roadmap.sh/rust)
 
 ## Project Structure
 
@@ -38,6 +48,10 @@ This project is organized into three main sections:
 - Macros and metaprogramming
 - Unsafe Rust
 - Foreign Function Interface (FFI)
+
+### Bonus
+
+Here will just be random excercises on more obscure concepts, just because.
 
 ## How to Use This Project
 
