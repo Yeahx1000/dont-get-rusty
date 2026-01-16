@@ -2,7 +2,7 @@
 
 A structured Rust learning project designed to help you progress from beginner to advanced concepts in Rust programming.
 
-Slapped this together for personal use, so it's not perfect, but it could be helpful, so sharing. Decent for practicing some Rust concepts, but not a replacement for a real project and real world experience.
+Slapped this together awhile back for personal use and forgot about it, so it's not perfect (will possibly add more over time), it could be helpful, so sharing. Decent for practicing some Rust concepts, but not a replacement for a real project and real world experience.
 
 - [Helpful Links and Tools](#helpful-links-and-tools)
 - [Project Structure](#project-structure)
