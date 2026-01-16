@@ -21,4 +21,12 @@ fn main() {
     println!("--------------------------------");
 
     println!(" Beginner, Exercise 1:");
+    // variables::exercise1();
+    // control_flow::exercise1(3);
+    // variables::excercise2();
+    // variables::excercise3();
+    // variables::excercise4();
+    // variables::excercise5();
+    // variables::excercise_bonus();
+    // control_flow::excercise2(15)
 }

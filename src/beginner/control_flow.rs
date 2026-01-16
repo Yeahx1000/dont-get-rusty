@@ -11,12 +11,35 @@
 // - "Too big" if the number is greater than 10
 // - "Just right" if the number is between 5 and 10 (inclusive)
 
+#[allow(dead_code)]
+pub fn exercise1(n: i32) -> () {
+    if n < 5 {
+        println!("Too small");
+    } else if n > 10 {
+        println!("Too big");
+    } else {
+        println!("Just right");
+    }
+}
+
 // Exercise 2: Multiple Conditions
 // TODO: Write a function that takes a temperature in Celsius and returns:
 // - "Freezing" if below 0
 // - "Cold" if between 0 and 10
 // - "Warm" if between 10 and 20
 // - "Hot" if above 20
+
+pub fn excercise2(temp: i32) -> () {
+    if temp < 0 {
+        println!("Freezing")
+    } else if temp <= 10 && temp >= 0 {
+        println!("Cold")
+    } else if temp <= 20 && temp >= 10 {
+        println!("Warm")
+    } else {
+        println!("Hot!")
+    }
+}
 
 // Exercise 3: Loops
 // TODO: Write a function that:
