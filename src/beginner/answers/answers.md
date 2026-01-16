@@ -5,6 +5,7 @@ This guide contains solutions for all beginner-level exercises. Try to solve the
 ## Variables and Basic Types
 
 ### Exercise 1: Variable Declaration and Mutability
+
 ```rust
 fn exercise1() {
     let mut age = 25;
@@ -15,6 +16,7 @@ fn exercise1() {
 ```
 
 ### Exercise 2: Type Inference
+
 ```rust
 fn exercise2() {
     let integer = 42;        // i32
@@ -30,6 +32,7 @@ fn exercise2() {
 ```
 
 ### Exercise 3: Constants
+
 ```rust
 fn exercise3() {
     const MAX_POINTS: u32 = 100_000;
@@ -38,6 +41,7 @@ fn exercise3() {
 ```
 
 ### Exercise 4: Shadowing
+
 ```rust
 fn exercise4() {
     let x = 5;
@@ -50,6 +54,7 @@ fn exercise4() {
 ```
 
 ### Exercise 5: Type Annotations
+
 ```rust
 fn exercise5() {
     let integer: i32 = 42;
@@ -64,6 +69,7 @@ fn exercise5() {
 ## Functions and Closures
 
 ### Exercise 1: Basic Functions
+
 ```rust
 fn add(a: i32, b: i32) -> i32 {
     a + b
@@ -71,6 +77,7 @@ fn add(a: i32, b: i32) -> i32 {
 ```
 
 ### Exercise 2: Multiple Return Values
+
 ```rust
 fn stats(numbers: &[i32]) -> (i32, f64, i32) {
     let sum: i32 = numbers.iter().sum();
@@ -81,6 +88,7 @@ fn stats(numbers: &[i32]) -> (i32, f64, i32) {
 ```
 
 ### Exercise 3: Closures
+
 ```rust
 fn apply_closure<F>(f: F, x: i32) -> i32
 where
@@ -97,6 +105,7 @@ apply_closure(multiply_by_two, 5); // Returns 10
 ```
 
 ### Exercise 4: Function Pointers
+
 ```rust
 fn apply_function(f: fn(i32) -> i32, start: i32, end: i32) -> Vec<i32> {
     (start..=end).map(f).collect()
@@ -112,6 +121,7 @@ let squares = apply_function(square, 1, 5);
 ```
 
 ### Exercise 5: Methods
+
 ```rust
 struct Rectangle {
     width: u32,
@@ -140,6 +150,7 @@ impl Rectangle {
 ## Control Flow
 
 ### Exercise 1: if/else Expressions
+
 ```rust
 fn check_number(n: i32) -> &'static str {
     if n < 5 {
@@ -153,6 +164,7 @@ fn check_number(n: i32) -> &'static str {
 ```
 
 ### Exercise 2: Multiple Conditions
+
 ```rust
 fn check_temperature(temp: f32) -> &'static str {
     if temp < 0.0 {
@@ -168,6 +180,7 @@ fn check_temperature(temp: f32) -> &'static str {
 ```
 
 ### Exercise 3: Loops
+
 ```rust
 fn exercise3() {
     // For loop
@@ -187,6 +200,7 @@ fn exercise3() {
 ```
 
 ### Exercise 4: Match Expression
+
 ```rust
 fn number_to_text(n: i32) -> &'static str {
     match n {
@@ -199,6 +213,7 @@ fn number_to_text(n: i32) -> &'static str {
 ```
 
 ### Exercise 5: Pattern Matching with Ranges
+
 ```rust
 fn age_category(age: u32) -> &'static str {
     match age {
@@ -211,6 +226,7 @@ fn age_category(age: u32) -> &'static str {
 ```
 
 ### Bonus Challenge: Nested Match
+
 ```rust
 fn match_booleans(a: bool, b: bool) -> &'static str {
     match (a, b) {
@@ -220,4 +236,4 @@ fn match_booleans(a: bool, b: bool) -> &'static str {
         (false, false) => "Both false",
     }
 }
-``` 
+```
