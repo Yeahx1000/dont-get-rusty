@@ -29,6 +29,7 @@ pub fn exercise1(n: i32) -> () {
 // - "Warm" if between 10 and 20
 // - "Hot" if above 20
 
+#[allow(dead_code)]
 pub fn excercise2(temp: i32) -> () {
     if temp < 0 {
         println!("Freezing")
@@ -46,6 +47,20 @@ pub fn excercise2(temp: i32) -> () {
 // 1. Uses a loop to count from 1 to 5
 // 2. Uses a while loop to count down from 5 to 1
 // 3. Uses a for loop to iterate over a range from 1 to 5
+
+#[allow(dead_code)]
+pub fn excercise3() {
+    let mut i: i32 = 5;
+
+    while i >= 1 {
+        println!("i: {}", i);
+        i -= 1;
+    }
+
+    for i in 1..=5 {
+        println!("i: {}", i);
+    }
+}
 
 // Exercise 4: Match Expression
 // TODO: Write a function that takes a number and returns:

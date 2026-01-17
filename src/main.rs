@@ -10,6 +10,8 @@ use beginner::control_flow;
 #[allow(unused_imports)]
 use beginner::variables;
 
+use crate::beginner::functions;
+
 fn main() {
     println!("Welcome to Don't Get Rusty!");
     println!("This project will help you learn Rust from beginner to advanced concepts.");
@@ -28,5 +30,7 @@ fn main() {
     // variables::excercise4();
     // variables::excercise5();
     // variables::excercise_bonus();
+    functions::excercise2(vec![1, 2, 4, 6, 23, 5, 5, 634, 3, 4, 65]);
     // control_flow::excercise2(15)
+    // control_flow::excercise3();
 }

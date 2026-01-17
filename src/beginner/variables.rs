@@ -28,6 +28,7 @@ pub fn exercise1() {
 // - A character
 // Print each variable and its type
 
+#[allow(dead_code)]
 pub fn excercise2() {
     let integer = 42;
     let float = 3.14;
@@ -44,6 +45,7 @@ pub fn excercise2() {
 // TODO: Declare a constant named MAX_POINTS with the value 100_000
 // TODO: Print the constant
 
+#[allow(dead_code)]
 pub fn excercise3() {
     const MAX_POINTS: i32 = 10_000;
     println!("Maximum amount of points you can have is {}", MAX_POINTS);
@@ -55,6 +57,7 @@ pub fn excercise3() {
 // TODO: Shadow it again with a new value that is the previous value multiplied by 2
 // Print each value of x
 
+#[allow(dead_code)]
 pub fn excercise4() {
     let x: i32 = 5;
     let x2: i32 = x + 1;
@@ -70,6 +73,7 @@ pub fn excercise4() {
 // - A boolean
 // Print each variable
 
+#[allow(dead_code)]
 pub fn excercise5() {
     const INTEGER: i32 = 42;
     const FLOAT: f64 = 3.14;
@@ -84,6 +88,7 @@ pub fn excercise5() {
 // TODO: Try to create a variable with a value that's too large for its type
 // What happens when you try to compile?
 
+#[allow(dead_code)]
 pub fn excercise_bonus() {
     #[allow(overflowing_literals)]
     let x: i32 = 123_456_789_123_456_789;
