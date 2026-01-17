@@ -1,4 +1,4 @@
-# Don't Get Rusty <!-- omit in toc -->
+# Don't Get Rusty 🦀 <!-- omit in toc -->
 
 A structured Rust learning project designed to help you progress from beginner to advanced concepts in Rust programming.
 
