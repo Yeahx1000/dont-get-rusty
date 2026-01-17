@@ -5,11 +5,11 @@ A structured Rust learning project designed to help you progress from beginner t
 Slapped this together awhile back for personal use and forgot about it, so it's not perfect (will possibly add more over time), it could be helpful, so sharing. Decent for practicing some Rust concepts, but not a replacement for a real project and real world experience.
 
 - [Helpful Links and Tools](#helpful-links-and-tools)
-- [Project Structure](#project-structure)
-  - [Beginner Level](#beginner-level)
-  - [Intermediate Level](#intermediate-level)
-  - [Advanced Level](#advanced-level)
-  - [Bonus](#bonus)
+- [Difficulty Levels](#difficulty-levels)
+  - [Beginner](#beginner)
+  - [Intermediate](#intermediate)
+  - [Advanced](#advanced)
+  - [Bonus Level](#bonus-level)
 - [How to Use This Project](#how-to-use-this-project)
 - [Answer Guides](#answer-guides)
 - [Getting Started](#getting-started)
@@ -21,35 +21,35 @@ Slapped this together awhile back for personal use and forgot about it, so it's 
 
 These are some helpful links and tools I've found useful.
 
-- ["The Book"](https://doc.rust-lang.org/book/)
+- ["The Book" 🦀](https://doc.rust-lang.org/book/)
 - [Rust Lang Cheatsheet](https://cheats.rs/)
 - [Rust Developer Roadmap](https://roadmap.sh/rust)
 
-## Project Structure
+## Difficulty Levels
 
 This project is organized into three main sections:
 
-### Beginner Level
+### Beginner
 
 - Variables and basic types
 - Control flow (if/else, loops, match)
 - Functions and closures
 
-### Intermediate Level
+### Intermediate
 
 - Ownership, borrowing, and lifetimes
 - Collections (Vectors, HashMaps)
 - Error handling with Result and Option
 - Traits and generics
 
-### Advanced Level
+### Advanced
 
 - Concurrency and async/await
 - Macros and metaprogramming
 - Unsafe Rust
 - Foreign Function Interface (FFI)
 
-### Bonus
+### Bonus Level
 
 Here will just be random excercises on more obscure concepts, just because.
 
@@ -89,6 +89,8 @@ Each answer guide contains complete solutions with explanations. However, it's r
 - When stuck, use `cargo doc --open` to read the documentation
 - Experiment with the code as you see fit,  make mistakes, that's how you learn
 - If stuck, check the answer guides (but try to understand the solutions)
+
+There's no one way to answer these, do what works for you, but try to be mindful of general language best practices for the future.
 
 ## Contributing
 
