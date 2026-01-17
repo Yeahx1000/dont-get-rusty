@@ -44,13 +44,39 @@ pub fn excercise2(numbers: Vec<i32>) -> (i32, f64, i32) {
 // Try it with different closures (addition, multiplication, etc.)
 
 #[allow(dead_code)]
-pub fn excercise3() {}
+pub fn excercise3(x: i32) -> i32 {
+    let add_one = |x| x + 1;
+    let multiply_by_two = |x| x * 2;
+    println!(
+        "the result of adding by 1 and multiplying by two is = {}",
+        multiply_by_two(add_one(x))
+    );
+    multiply_by_two(add_one(x))
+}
 
 // Exercise 4: Function Pointers
 // TODO: Write a function that:
 // - Takes a function pointer as a parameter
 // - Applies the function to a range of numbers
 // - Returns a vector of results
+
+#[allow(dead_code)]
+pub fn pointer_func(f: fn(i32) -> i32, start: i32, end: i32) -> Vec<i32> {
+    (start..=end).map(f).collect()
+}
+
+#[allow(dead_code)]
+pub fn excercise4(a: i32, b: i32) -> () {
+    fn square(x: i32) -> i32 {
+        x * x
+    }
+
+    let squared: Vec<i32> = pointer_func(square, a, b);
+    println!(
+        "the range of the numbers {} and {} squared is {:?}",
+        a, b, squared
+    )
+}
 
 // Exercise 5: Methods
 // TODO: Create a struct named Rectangle with width and height
@@ -59,6 +85,45 @@ pub fn excercise3() {}
 // - area() - calculates the area
 // - perimeter() - calculates the perimeter
 // - is_square() - checks if it's a square
+
+#[allow(dead_code)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+impl Rectangle {
+    fn new(width: u32, height: u32) -> Self {
+        Self { width, height }
+    }
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+    fn perimeter(&self) -> u32 {
+        2 * (self.width + self.height)
+    }
+    fn is_square(&self) -> bool {
+        self.width == self.height
+    }
+}
+
+pub fn excercise5(a: u32, b: u32) {
+    let new_rectangle = Rectangle::new(a, b);
+
+    println!("The area of {} and {} is {}", a, b, new_rectangle.area());
+    println!(
+        "The perimeter of {} and {} is {}",
+        a,
+        b,
+        new_rectangle.perimeter()
+    );
+    println!(
+        "Are the sides of width {} and height {} squared? {}",
+        a,
+        b,
+        new_rectangle.is_square()
+    )
+}
 
 // Bonus Challenge:
 // TODO: Write a function that takes a closure and returns a new closure

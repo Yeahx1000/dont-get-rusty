@@ -30,7 +30,10 @@ fn main() {
     // variables::excercise4();
     // variables::excercise5();
     // variables::excercise_bonus();
-    functions::excercise2(vec![1, 2, 4, 6, 23, 5, 5, 634, 3, 4, 65]);
+    // functions::excercise2(vec![1, 2, 4, 6, 23, 5, 5, 634, 3, 4, 65]);
+    // functions::excercise3(5);
+    // functions::excercise4(3, 8)
+    functions::excercise5(5, 9);
     // control_flow::excercise2(15)
     // control_flow::excercise3();
 }
