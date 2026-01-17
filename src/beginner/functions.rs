@@ -107,6 +107,7 @@ impl Rectangle {
     }
 }
 
+#[allow(dead_code)]
 pub fn excercise5(a: u32, b: u32) {
     let new_rectangle = Rectangle::new(a, b);
 
