@@ -36,4 +36,6 @@ fn main() {
     // functions::excercise5(5, 9);
     // control_flow::excercise2(15)
     // control_flow::excercise3();
+    control_flow::excercise4(2);
+    control_flow::excercise5(78);
 }

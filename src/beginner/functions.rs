@@ -129,3 +129,11 @@ pub fn excercise5(a: u32, b: u32) {
 // Bonus Challenge:
 // TODO: Write a function that takes a closure and returns a new closure
 // that applies the original closure twice
+
+#[allow(dead_code)]
+pub fn excercise_bonus<F>(f: F) -> impl Fn(i32) -> i32
+where
+    F: Fn(i32) -> i32 + Copy,
+{
+    move |x| f(f(x))
+}

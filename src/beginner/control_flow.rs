@@ -69,12 +69,34 @@ pub fn excercise3() {
 // - "Three" for 3
 // - "Many" for any other number
 
+#[allow(dead_code)]
+pub fn excercise4(n: i32) -> () {
+    match n {
+        1 => println!("One"),
+        2 => println!("Two"),
+        3 => println!("Three"),
+        _ => println!("Many"),
+    }
+}
+
+// &'static str if a literal string is returned
+// () if no value is returned and using function like println!()
+
 // Exercise 5: Pattern Matching with Ranges
 // TODO: Write a function that takes an age and returns:
 // - "Child" for ages 0-12
 // - "Teenager" for ages 13-19
 // - "Adult" for ages 20-64
 // - "Senior" for ages 65 and above
+
+pub fn excercise5(age: i32) -> () {
+    match age {
+        0..=12 => println!("Child"),
+        13..=19 => println!("Teenager"),
+        20..=64 => println!("Adult"),
+        _ => println!("Senior"),
+    }
+}
 
 // Bonus Challenge:
 // TODO: Write a function that uses nested match expressions to handle
