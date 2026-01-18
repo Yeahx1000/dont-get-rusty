@@ -109,17 +109,6 @@ Each answer guide contains complete solutions with explanations. However, it's r
 
 4. **Start learning**: Begin with `src/beginner/variables.rs` and work your way up!
 
-## Project Structure
-
-```text
-src/
-├── beginner/          # Basic Rust concepts
-├── intermediate/      # Advanced Rust features
-├── advanced/          # Concurrency, macros, FFI
-├── bonus/             # Additional challenging exercises
-└── utils/             # Shared utility functions
-```
-
 ## Tips for Learning
 
 - Read the comments in each file carefully
@@ -148,36 +137,7 @@ All utility functions have unit tests to ensure correctness.
 
 ## Contributing
 
-We welcome contributions! Here's how you can help:
-
-### Adding New Exercises
-
-1. Create a new module in the appropriate difficulty level
-2. Follow the existing pattern: TODO comments for exercises, answer guides in `answers/`
-3. Add tests for any new utility functions
-4. Update the README with any new dependencies
-
-### Improving Existing Content
-
-- Fix typos or errors
-- Add more detailed explanations
-- Improve code examples
-- Add more test cases
-
-### Submission Process
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Submit a pull request
-
-### Code Style
-
-- Follow Rust naming conventions
-- Use `#[allow(dead_code)]` for educational examples
-- Add comments for complex concepts
-- Keep exercises focused and practical
+Contributions welcome
 
 ## Dependencies
 
@@ -192,12 +152,3 @@ This project uses several key Rust crates:
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## Support
-
-If you encounter issues or have questions:
-
-- Check the answer guides first
-- Review the Rust documentation
-- Open an issue if you find bugs or have suggestions
-
-Happy Rust learning! 🦀
