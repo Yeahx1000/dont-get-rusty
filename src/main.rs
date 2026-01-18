@@ -8,6 +8,8 @@ mod utils;
 #[allow(unused_imports)]
 use beginner::control_flow;
 #[allow(unused_imports)]
+use beginner::functions;
+#[allow(unused_imports)]
 use beginner::variables;
 
 fn main() {
@@ -20,5 +22,11 @@ fn main() {
     println!("\nGood luck on your Rust journey! 🦀");
     println!("--------------------------------");
 
-    println!(" Beginner, Exercise 1:");
+    // Example beginner exercises (uncomment to run):
+    // variables::exercise1();
+
+    // Example advanced exercises using dependencies:
+    advanced::concurrency::parallel_processing_example();
+
+    println!("\nAll examples completed! Check out the exercises in each module.");
 }

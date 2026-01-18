@@ -47,4 +47,3 @@
 // - Handles optional fields
 // - Provides fluent interface
 // Use proc-macro crate
-

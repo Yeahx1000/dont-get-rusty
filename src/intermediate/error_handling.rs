@@ -56,4 +56,3 @@ use crate::utils::{
 // - Makes an HTTP request
 // - Returns Result with response
 // Handle network errors, invalid URLs, etc.
-

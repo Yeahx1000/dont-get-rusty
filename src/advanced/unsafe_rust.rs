@@ -47,4 +47,3 @@
 // - Handles fragmentation
 // - Provides safe interface
 // Implement GlobalAlloc
-

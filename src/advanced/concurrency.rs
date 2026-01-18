@@ -41,6 +41,34 @@ use crate::utils::{
 // - Waits for all tasks to complete
 // Use tokio
 
+#[allow(dead_code)]
+pub async fn async_tasks_example() {
+    use tokio::time::{sleep, Duration};
+
+    print_section_header("Async/Await Example");
+
+    let tasks = vec![
+        tokio::spawn(async {
+            sleep(Duration::from_millis(100)).await;
+            println!("Task 1 completed");
+            1
+        }),
+        tokio::spawn(async {
+            sleep(Duration::from_millis(200)).await;
+            println!("Task 2 completed");
+            2
+        }),
+        tokio::spawn(async {
+            sleep(Duration::from_millis(50)).await;
+            println!("Task 3 completed");
+            3
+        }),
+    ];
+
+    let results = futures::future::join_all(tasks).await;
+    println!("All async tasks completed: {:?}", results);
+}
+
 // Exercise 5: Parallel Processing
 // TODO: Write a function that:
 // - Takes a vector of numbers
@@ -48,10 +76,26 @@ use crate::utils::{
 // - Returns the sum of squares
 // Use rayon
 
+#[allow(dead_code)]
+pub fn parallel_processing_example() {
+    use rayon::prelude::*;
+
+    print_section_header("Parallel Processing Example");
+
+    let numbers = create_test_numbers();
+    println!("Original numbers: {:?}", numbers);
+
+    let squared: Vec<i32> = numbers.par_iter().map(|&x| x * x).collect();
+
+    let sum: i32 = squared.par_iter().sum();
+
+    println!("Squared numbers: {:?}", squared);
+    println!("Sum of squares: {}", sum);
+}
+
 // Bonus Challenge:
 // TODO: Write a function that:
 // - Creates a thread pool
 // - Processes tasks in parallel
 // - Returns results in order
 // Use tokio::spawn and futures
-
