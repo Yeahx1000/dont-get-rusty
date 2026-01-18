@@ -45,4 +45,3 @@
 // - Uses associated types
 // - Has a default implementation
 // Implement it for common type conversions
-

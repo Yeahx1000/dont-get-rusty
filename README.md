@@ -13,9 +13,18 @@ Slapped this together awhile back for personal use and forgot about it, so it's 
 - [How to Use This Project](#how-to-use-this-project)
 - [Answer Guides](#answer-guides)
 - [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
 - [Tips for Learning](#tips-for-learning)
+- [Running Examples](#running-examples)
+- [Testing](#testing)
 - [Contributing](#contributing)
+  - [Adding New Exercises](#adding-new-exercises)
+  - [Improving Existing Content](#improving-existing-content)
+  - [Submission Process](#submission-process)
+  - [Code Style](#code-style)
+- [Dependencies](#dependencies)
 - [License](#license)
+- [Support](#support)
 
 ## Helpful Links and Tools
 
@@ -77,25 +86,118 @@ Each answer guide contains complete solutions with explanations. However, it's r
 
 ## Getting Started
 
-1. Make sure you have Rust installed (<https://rustup.rs/>)
-2. Clone this repo
-3. Run `cargo build` to ensure everything compiles
-4. Start with `src/beginner/variables.rs` prefereably.
+1. **Install Rust**: Make sure you have Rust installed (<https://rustup.rs/>)
+
+   ```bash
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
+
+2. **Clone this repo**
+
+   ```bash
+   git clone https://github.com/your-username/dont-get-rusty.git
+   cd dont-get-rusty
+   ```
+
+3. **Build and run**
+
+   ```bash
+   cargo build    # Build the project
+   cargo run      # Run the examples
+   cargo test     # Run the tests
+   ```
+
+4. **Start learning**: Begin with `src/beginner/variables.rs` and work your way up!
+
+## Project Structure
+
+```text
+src/
+├── beginner/          # Basic Rust concepts
+├── intermediate/      # Advanced Rust features
+├── advanced/          # Concurrency, macros, FFI
+├── bonus/             # Additional challenging exercises
+└── utils/             # Shared utility functions
+```
 
 ## Tips for Learning
 
 - Read the comments in each file carefully
 - Try to modify the examples to see what happens
 - When stuck, use `cargo doc --open` to read the documentation
-- Experiment with the code as you see fit,  make mistakes, that's how you learn
+- Experiment with the code as you see fit, make mistakes, that's how you learn
 - If stuck, check the answer guides (but try to understand the solutions)
 
-There's no one way to answer these, do what works for you, but try to be mindful of general language best practices for the future.
+## Running Examples
+
+The project includes practical examples using popular Rust crates:
+
+- **Rayon**: Parallel processing examples
+- **Tokio**: Async/await demonstrations
+- **Serde**: Serialization examples
+
+## Testing
+
+Run the comprehensive test suite:
+
+```bash
+cargo test
+```
+
+All utility functions have unit tests to ensure correctness.
 
 ## Contributing
 
-Feel free to contribute improvements or additional exercises by submitting pull requests.
+We welcome contributions! Here's how you can help:
+
+### Adding New Exercises
+
+1. Create a new module in the appropriate difficulty level
+2. Follow the existing pattern: TODO comments for exercises, answer guides in `answers/`
+3. Add tests for any new utility functions
+4. Update the README with any new dependencies
+
+### Improving Existing Content
+
+- Fix typos or errors
+- Add more detailed explanations
+- Improve code examples
+- Add more test cases
+
+### Submission Process
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature-name`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Submit a pull request
+
+### Code Style
+
+- Follow Rust naming conventions
+- Use `#[allow(dead_code)]` for educational examples
+- Add comments for complex concepts
+- Keep exercises focused and practical
+
+## Dependencies
+
+This project uses several key Rust crates:
+
+- `tokio`: Async runtime for async/await examples
+- `rayon`: Data parallelism library
+- `serde`: Serialization framework
+- `futures`: Async programming utilities
 
 ## License
 
-This project is open source and available under the MIT License.
+This project is open source and available under the [MIT License](LICENSE).
+
+## Support
+
+If you encounter issues or have questions:
+
+- Check the answer guides first
+- Review the Rust documentation
+- Open an issue if you find bugs or have suggestions
+
+Happy Rust learning! 🦀

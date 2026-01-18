@@ -8,9 +8,9 @@ mod utils;
 #[allow(unused_imports)]
 use beginner::control_flow;
 #[allow(unused_imports)]
+use beginner::functions;
+#[allow(unused_imports)]
 use beginner::variables;
-
-use crate::beginner::functions;
 
 fn main() {
     println!("Welcome to Don't Get Rusty!");
@@ -22,7 +22,8 @@ fn main() {
     println!("\nGood luck on your Rust journey! 🦀");
     println!("--------------------------------");
 
-    println!(" Beginner, Exercise 1:");
+    // Example beginner exercises (uncomment to run):
+
     // variables::exercise1();
     // control_flow::exercise1(3);
     // variables::excercise2();
@@ -38,4 +39,9 @@ fn main() {
     // control_flow::excercise3();
     control_flow::excercise4(2);
     control_flow::excercise5(78);
+
+    // Example advanced exercises using dependencies:
+    advanced::concurrency::parallel_processing_example();
+
+    println!("\nAll examples completed! Check out the exercises in each module.");
 }

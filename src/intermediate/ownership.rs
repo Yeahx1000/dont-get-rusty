@@ -45,4 +45,3 @@
 // - Takes a reference to a string
 // - Returns a new string containing only the vowels
 // - Uses iterators and collect
-
