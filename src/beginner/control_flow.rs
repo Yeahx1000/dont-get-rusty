@@ -89,6 +89,7 @@ pub fn excercise4(n: i32) -> () {
 // - "Adult" for ages 20-64
 // - "Senior" for ages 65 and above
 
+#[allow(dead_code)]
 pub fn excercise5(age: i32) -> () {
     match age {
         0..=12 => println!("Child"),

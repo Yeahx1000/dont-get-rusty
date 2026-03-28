@@ -39,12 +39,13 @@ fn main() {
     // functions::excercise5(5, 9);
     // control_flow::excercise2(15)
     // control_flow::excercise3();
-    control_flow::excercise4(2);
-    control_flow::excercise5(78);
-    collections::excercise1(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    // control_flow::excercise4(2);
+    // control_flow::excercise5(78);
+    // collections::excercise1(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    collections::excercise2("one");
 
     // Example advanced exercises using dependencies:
-    advanced::concurrency::parallel_processing_example();
+    // advanced::concurrency::parallel_processing_example();
 
     println!("\nAll examples completed! Check out the exercises in each module.");
 }

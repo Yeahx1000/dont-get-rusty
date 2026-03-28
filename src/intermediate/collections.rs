@@ -4,6 +4,7 @@
 //! - HashMaps
 //! - HashSets
 //! - Iterators and collection methods
+use std::collections::HashMap;
 
 #[allow(unused_imports)]
 use crate::utils::{
@@ -39,7 +40,26 @@ pub fn excercise1(num: Vec<i32>) -> (i32, i32, f64) {
 // Handle the case where the key doesn't exist
 
 #[allow(dead_code)]
-pub fn excercise2() {}
+pub fn excercise2(key: &str) -> Option<i32> {
+    let mut map: HashMap<String, i32> = HashMap::new();
+    map.insert("one".to_string(), 1);
+    map.insert("two".to_string(), 2);
+    map.insert("three".to_string(), 3);
+
+    if key == "one" {
+        println!("Value for 'one': {:?}", map.get("one"));
+        return Some(1);
+    } else if key == "two" {
+        println!("Value for 'two': {:?}", map.get("two"));
+        return Some(2);
+    } else if key == "three" {
+        println!("Value for 'three': {:?}", map.get("three"));
+        return Some(3);
+    } else {
+        println!("Key not found");
+        return None;
+    }
+}
 
 // Exercise 3: HashSet Operations
 // TODO: Write a function that:
