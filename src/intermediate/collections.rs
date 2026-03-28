@@ -21,7 +21,7 @@ use crate::utils::{
 // Use iterators and collection methods
 
 #[allow(dead_code)]
-pub fn excercercise1(num: Vec<i32>) -> (i32, i32, f64) {
+pub fn excercise1(num: Vec<i32>) -> (i32, i32, f64) {
     let sum: i32 = num.iter().sum();
     let product: i32 = num.iter().product();
     let avg: f64 = sum as f64 / num.len() as f64;
@@ -37,6 +37,9 @@ pub fn excercercise1(num: Vec<i32>) -> (i32, i32, f64) {
 // - Adds some key-value pairs
 // - Returns the value for a given key
 // Handle the case where the key doesn't exist
+
+#[allow(dead_code)]
+pub fn excercise2() {}
 
 // Exercise 3: HashSet Operations
 // TODO: Write a function that:

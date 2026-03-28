@@ -41,7 +41,7 @@ fn main() {
     // control_flow::excercise3();
     control_flow::excercise4(2);
     control_flow::excercise5(78);
-    collections::excercercise1(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    collections::excercise1(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
     // Example advanced exercises using dependencies:
     advanced::concurrency::parallel_processing_example();
