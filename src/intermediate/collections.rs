@@ -20,6 +20,17 @@ use crate::utils::{
 //   - The average of all numbers
 // Use iterators and collection methods
 
+#[allow(dead_code)]
+pub fn excercercise1(num: Vec<i32>) -> (i32, i32, f64) {
+    let sum: i32 = num.iter().sum();
+    let product: i32 = num.iter().product();
+    let avg: f64 = sum as f64 / num.len() as f64;
+
+    println!("Sum: {}, Product: {}, Average: {}", sum, product, avg);
+
+    return (sum, product, avg);
+}
+
 // Exercise 2: HashMap Basics
 // TODO: Write a function that:
 // - Creates a HashMap mapping strings to integers
